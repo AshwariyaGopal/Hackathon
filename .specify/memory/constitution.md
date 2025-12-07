@@ -1,55 +1,58 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!-- Sync Impact Report:
+Version change: None → 1.0.0
+List of modified principles:
+- Added Technical Accuracy
+- Added Clear Explanations
+- Added Reproducibility
+- Added Consistent Terminology and Tone
+- Added Book Standards Adherence
+- Added RAG Chatbot Standards Adherence
+- Added Citations and Plagiarism
+Added sections: Constraints, Success Criteria
+Removed sections: None
+Templates requiring updates:
+- .specify/templates/plan-template.md ⚠ pending
+- .specify/templates/spec-template.md ⚠ pending
+- .specify/templates/tasks-template.md ⚠ pending
+- .specify/templates/commands/*.md ⚠ pending
+- README.md ⚠ pending
+Follow-up TODOs: RATIFICATION_DATE
+-->
+# Physical AI & Humanoid Robotics — Book + RAG Chatbot Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Technical Accuracy
+All content and code must be technically accurate, specifically concerning ROS 2, Gazebo, Unity, Isaac, VLA, and RAG implementations.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Clear Explanations
+Explanations must be clear, step-by-step, and tailored for intermediate AI/robotics learners.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Reproducibility
+Code and tutorials must be reproducible, allowing users to replicate results easily.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Consistent Terminology and Engineering Tone
+Maintain consistent terminology and an engineering tone throughout all content.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Book Standards Adherence
+The book must adhere to the specified standards: 8 core chapters (ROS2, Gazebo/Unity, Isaac, Nav2/SLAM, URDF, Sensors, VLA, Capstone), 30k–50k words, 20+ runnable code examples, use diagrams when needed, and a Flesch-Kincaid grade of 9–11.
 
-### [PRINCIPLE_6_NAME]
+### VI. RAG Chatbot Standards Adherence
+The RAG chatbot must strictly answer from book content, include a “selected-text only” mode, use a stack of FastAPI + OpenAI Agents/ChatKit + Qdrant + Neon Postgres, and ensure clean chunking & deterministic retrieval.
 
+### VII. Citations and Plagiarism
+All citations must follow IEEE style, include a minimum of 30 credible sources (ROS docs, NVIDIA docs, robotics papers), and maintain a zero-plagiarism tolerance.
 
-[PRINCIPLE__DESCRIPTION]
+## Constraints
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+The project must be built using Spec-Kit Plus + Claude Code. Final deployment will be on Docusaurus on GitHub Pages. The chatbot must be fully embedded and functional.
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+## Success Criteria
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+The book must build and deploy successfully. The chatbot must answer accurately. All content must be verifiable and runnable.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+Constitution supersedes all other practices. Amendments require documentation, approval, and a migration plan. All PRs/reviews must verify compliance. Complexity must be justified.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: TODO(RATIFICATION_DATE): Original adoption date unknown. | **Last Amended**: 2025-12-07
